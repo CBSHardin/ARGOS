@@ -26,8 +26,6 @@ It must be noted that all the hardware for this project was developed during the
 ### Virtual assembly
 <img width="1500" height="1200" alt="ensamblado_virtual_perspectiva_difuso" src="https://github.com/user-attachments/assets/7ccf516c-332e-41e2-ae31-d906e1482d76" />
 
-
-
 ### Electronic boards
 
   <img  width="480" height="480" alt="power_board" src="https://github.com/user-attachments/assets/227ff322-3065-4dfe-9cf6-6f3406ca768d" /> 
@@ -65,4 +63,10 @@ For to accomplish this goal, it was mandatory to hide all the complexity involve
 Moreover and following the goal of fast-prototyping, Arduino IDE was selected as the IDE for the toolkit. A new core was designed to incorporate a port of FreeRTOS and to adapt some core's code. In addition, the tools for OTA (over-the-air programming) were integrated seamless in Arduino IDE though the new core. This simplify the tedious process of deploying a new program to simple click in the Arduino IDE's programming button.
 
 ## More info
-You could find more info of the project at the bachelor's dissertation, available in the digital archive of the Universidad Politécnica of Madrid (UPM): here.
+You could find more info of the project at the bachelor's dissertation, available in the digital archive of the Universidad Politécnica of Madrid (UPM), linked [here](https://oa.upm.es/93830/).
+
+## References
+[1] - J. Pugh, A. Martinoli, and F. Engineering, "A Fast On-Board Relative Positioning Module for
+Multi-Robot Systems," in Proc. IEEE/RSJ Int. Conf. Robot. Autom., 2009, pp. 4501–4506.
+[2] - J. F. Roberts, J. Pugh, and A. Martinoli, "2.5D Infrared Range and Bearing System for
+Collective Robotics," in Proc. IEEE Int. Conf. Robot. Autom., 2009, pp. 2379–2384.
