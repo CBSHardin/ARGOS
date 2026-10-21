@@ -1,0 +1,4 @@
+
+
+
+void initDeviceLsm6dsr();

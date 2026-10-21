@@ -1,0 +1,159 @@
+
+
+
+class GpioInterruptsPHAL {
+
+  typedef enum : uint8_t
+  {
+    INT0,
+    INT1,
+    INT2,
+    INT3,
+    INT4,
+    INT5,
+    INT6,
+    INT7,
+    PCINT0, // = 8
+    PCINT1,
+    PCINT2,
+    PCINT3,
+    PCINT4,
+    PCINT5,
+    PCINT6,
+    PCINT7,
+    PCINT8,
+    PCINT9, // = 16
+    PCINT10,
+    PCINT11,
+    PCINT12,
+    PCINT13,
+    PCINT14,
+    PCINT15,
+    PCINT16,
+    PCINT17,
+    PCINT18,
+    PCINT19,
+    PCINT20,
+    PCINT21,
+    PCINT22,
+    PCINT23
+  }
+  IntSignal_t;
+
+
+  typedef enum : uint8_t
+  {
+    LOW_LEVEL,    /*Only available for INTx interrupts*/
+    ANY_EDGE,
+    RISING_EDGE,
+    FALLING_EDGE
+  }
+  TriggerMode_t;
+
+  void enable(IntSignal_t intSig, delegate<void> callbackDelegate, TriggerMode_t mode);
+
+  void disable(IntSignal_t intSig);
+
+  void changeTriggerMode(IntSignal_t intSig);
+
+
+  signalHandler
+
+
+  //Received interrupt signal
+  inline static void int0Signal()
+  {
+
+
+  }
+
+  inline static void int1Signal()
+  {
+
+
+  }
+
+  inline static void int2Signal()
+  {
+
+
+  }
+
+  inline static void int3Signal()
+  {
+
+
+  }
+
+  inline static void int4Signal()
+  {
+
+
+  }
+
+  inline static void int5Signal()
+  {
+
+
+  }
+
+  inline static void int6Signal()
+  {
+
+
+  }
+
+  inline static void int7Signal()
+  {
+
+
+  }
+
+
+
+}
+
+
+ISR (PCINT0)          //External interrupt_zero ISR
+{
+
+  ISRhandler(GpioInterruptsPHAL::IntSignal_t.INT0);
+
+}
+
+ISR (PCINT1)
+{
+
+  ISRhandler(GpioInterruptsPHAL::IntSignal_t.INT0);
+
+}
+
+ISR (PCINT2)
+{
+
+  ISRhandler(GpioInterruptsPHAL::IntSignal_t.INT0);
+
+}
+
+
+
+inline static void ISRhandler(uint8_t ISRentryIndex)
+{
+
+
+}
+
+
+/*
+pcint0.enableInterrupt(handler, type);
+pcint1.enableInterrupt(handler, type);
+
+
+pcint.disableInterrupt();
+
+
+int1.enableInterrupt(handler, type);
+
+
+gpioInterrupts.enable(interruptSignal_t::INT0, callbackBUtton, RISING_EDGE);
+*/

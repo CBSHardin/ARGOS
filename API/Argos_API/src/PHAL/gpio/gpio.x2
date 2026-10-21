@@ -1,0 +1,124 @@
+
+
+#ifndef _GPIO_HAL_H__
+#define _GPIO_HAL_H__
+
+#include <stdint.h>
+
+#include "interfaceGpio.h"
+
+
+/*
+//Set pin
+*PORTA = (*PORTA) | (GPIOpin & dir);
+
+
+*/
+
+
+
+class GpioHAL : public InterfaceGpioHAL
+{
+/*
+  public:
+
+    GpioHAL(InterfaceGpioHAL* instance) : \
+      instancePtr(instance)
+    {};
+
+
+    inline void setPinDir(uint8_t GPIOpin, PinDir_t dir)
+    {
+
+      instancePtr->setPinDir(GPIOpin, dir);
+
+    }
+
+*/
+    /*Precondition: pin must be configured as input*/
+    /*
+    inline void enablePinPullUpResistors(uint8_t GPIOpin)
+    {
+
+        instancePtr->enablePinPullUpResistors(GPIOpin);
+
+    }
+
+    inline void disablePinPullUpResistors(uint8_t GPIOpin)
+    {
+
+      instancePtr->disablePinPullUpResistors(GPIOpin);
+
+    }
+
+
+
+
+
+    inline void writePin(uint8_t GPIOpin, PinState_t state)
+    {
+
+      instancePtr->writePin(GPIOpin, state);
+
+    }
+
+
+    inline PinState_t readPin(uint8_t GPIOpin)
+    {
+
+      return instancePtr->readPin(GPIOpin);
+
+    }
+
+
+
+    inline void writePort(uint8_t portValue)
+    {
+
+      instancePtr->writePort(portValue);
+
+    }
+
+
+    inline uint8_t readPort()
+    {
+
+      return instancePtr->readPort();
+
+    }
+
+
+  private:
+
+    InterfaceGpioHAL* instancePtr;
+
+    */
+
+};
+
+
+
+extern GpioHAL gpioa;
+
+extern GpioHAL gpiob;
+
+extern GpioHAL gpioc;
+
+extern GpioHAL gpiod;
+
+extern GpioHAL gpioe;
+
+extern GpioHAL gpiof;
+
+extern GpioHAL gpiog;
+
+extern GpioHAL gpioh;
+
+extern GpioHAL gpioj;
+
+extern GpioHAL gpiok;
+
+extern GpioHAL gpiol;
+
+
+#endif

@@ -1,0 +1,58 @@
+##############################################################
+## Argos motherboard Main CPU w/ atmega2560_argos
+## -------------------------
+# See: http://code.google.com/p/arduino/wiki/Platforms
+##############################################################
+
+mainCpu.name=Main CPU (Atmega 2560)
+
+## USB ID
+#mainCpu.vid.0=0x0403
+#mainCpu.pid-0=0x6001
+
+################################# MENU OPTIONS #################################
+#menu.exEnv = Execution enviroment
+#mainCpu.menu.exEnv.real = Real world
+#mainCpu.menu.exEnv.sim = Simulator (Gazebo)
+
+menu.uploadMethod = Upload method
+
+mainCpu.menu.uploadMethod.oap = Over Air Programming (requires WIFI)
+mainCpu.menu.uploadMethod.serial = Serial (require physical connection)
+
+menu.target = Target agent or agents
+mainCpu.menu.target.all = ALL
+mainCpu.menu.target.one = Agent with swarm ID 1
+mainCpu.menu.target.two = Agent with swarm ID 2
+mainCpu.menu.target.three = Agent with swarm ID 3
+mainCpu.menu.target.four = Agent with swarm ID 4
+
+#################################### CONFIG ####################################
+
+## Config for Over Air Programming
+mainCpu.menu.uploadMethod.oap.upload.tool=oap
+mainCpu.menu.uploadMethod.oap.upload.protocol=
+mainCpu.menu.uploadMethod.oap.upload.maximum_size=253952
+mainCpu.menu.uploadMethod.oap.upload.maximum_data_size=8192
+
+## Config for serial upload
+mainCpu.menu.uploadMethod.serial.upload.tool=avrdude
+mainCpu.menu.uploadMethod.serial.upload.protocol=wiring
+mainCpu.menu.uploadMethod.serial.upload.speed=115200
+mainCpu.menu.uploadMethod.serial.upload.maximum_size=253952
+mainCpu.menu.uploadMethod.serial.upload.maximum_data_size=8192
+
+mainCpu.bootloader.tool=avrdude
+mainCpu.bootloader.low_fuses=0xF7
+mainCpu.bootloader.high_fuses=0xD8
+mainCpu.bootloader.extended_fuses=0xFD
+mainCpu.bootloader.unlock_bits=0x3F
+mainCpu.bootloader.lock_bits=0x0F
+mainCpu.bootloader.file=stk500v2/stk500boot_v2_mega2560.hex
+
+mainCpu.build.mcu=atmega2560
+mainCpu.build.f_cpu=16000000L
+mainCpu.build.core=arduino
+mainCpu.build.variant=argos
+# default board may be overridden by the cpu menu
+mainCpu.build.board=ARGOS_MOTHERBOARD

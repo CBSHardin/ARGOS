@@ -1,0 +1,49 @@
+
+#include "implPHAL.h"
+#include "../../PHAL/gpio/gpio.h"
+
+#include <avr/io.h>
+
+
+
+implPHALGpio implGpioa(&PORTA, &DDRA, &PINA);
+GpioHAL gpioa(&implGpioa);
+
+implPHALGpio implGpiob(&PORTB, &DDRB, &PINB);
+GpioHAL gpiob(&implGpiob);
+
+
+implPHALGpio implGpioc(&PORTC, &DDRC, &PINC);
+GpioHAL gpioc(&implGpioc);
+
+
+implPHALGpio implGpiod(&PORTD, &DDRD, &PIND);
+GpioHAL gpiod(&implGpiod);
+
+
+implPHALGpio implGpioe(&PORTE, &DDRE, &PINE);
+GpioHAL gpioe(&implGpioe);
+
+
+implPHALGpio implGpiof(&PORTF, &DDRF, &PINF);
+GpioHAL gpiof(&implGpiof);
+
+
+implPHALGpio implGpiog(&PORTG, &DDRG, &PING);
+GpioHAL gpiog(&implGpiog);
+
+
+implPHALGpio implGpioh(&PORTH, &DDRH, &PINH);
+GpioHAL gpioh(&implGpioh);
+
+
+implPHALGpio implGpioj(&PORTJ, &DDRJ, &PINJ);
+GpioHAL gpioj(&implGpioj);
+
+
+implPHALGpio implGpiok(&PORTK, &DDRK, &PINK);
+GpioHAL gpiok(&implGpiok);
+
+
+implPHALGpio implGpiol(&PORTL, &DDRL, &PINL);
+GpioHAL gpiol(&implGpiol);

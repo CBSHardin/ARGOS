@@ -1,0 +1,27 @@
+
+#include "../config.h"
+
+
+
+#ifdef USE_DFROBOT_CHASIS
+
+  #include "actuators/power_train/implementations/dfrobot_chasis/dfrobot_chasis_power_train.hpp"
+  #include "actuators/power_train/interface_power_train.hpp"
+
+  #include "sensors/power_train_encoders/implementations/dfrobot_chasis/dfrobot_chasis_power_train_encoders.hpp"
+  #include "sensors/power_train_encoders/interface_power_train_encoders.hpp"
+
+  namespace Argos
+  {
+
+    DFRobotChasisPowerTrain chasisPowerTrain(182, 3000);
+
+    InterfacePowerTrain<DFRobotChasisPowerTrain>& PowerTrain = chasisPowerTrain;
+
+
+    DFRobotChasisPowerTrainEncoders chasisPowerTrainEncoders;
+    InterfacePowerTrainEncoders<DFRobotChasisPowerTrainEncoders>& PowerTrainEncoders = chasisPowerTrainEncoders;
+
+  }
+
+#endif
