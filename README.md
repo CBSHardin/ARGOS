@@ -7,11 +7,11 @@ For my Bachelor's Thesis I developed a robotic platform called ARGOS, oriented t
 Well, at the time of the project, there weren't robotics platforms designed for multi-robot system and swarm robotics easily accessible. Nonetheless, there were a few that could have been used, but some of this platforms were too tailored to a specific set of problems or too expensive to be considerate. 
 
 Therefore, the ARGOS robotic platform was born. It incorporates the basics elements you'd need for research in swarm robotics and multi-robot systems:
-+ Mobile capabilities: four wheeled motors with encoders to allow close loop speed control and precise movement control. 
++ Mobile capabilities: four-wheel drive with individual motors and encoders to enable closed-loop speed control and precise motion tracking. 
 + Battery Management Unit: to supervise the state of charge of the battery pack (LiPO chemistry) as well as to protect the user and the robot.
-+ 9 axis IMU: accelerometer, gyroscope and magnetometer to implement close loop pose control and waypoint based navigation.
-+ Range and bearing sensor: this sensor allows the robots locate the relative distance and angle of others robots to be able to cooperate with them. Also, it could work as reflectivity LIDAR to detect near obstacles.
-+ Ultrasonic sensor to detect obstacles locates at the robot's front.
++ 9 axis IMU: accelerometer, gyroscope and magnetometer to implement closed loop pose control and waypoint based navigation.
++ Range and bearing sensor: this sensor allows the robots to locate the relative distance and angle of other agents to enable cooperative behaviors. Additionally, it can function as a reflective LiDAR for nearby obstacle detection.
++ Ultrasonic sensor: forward-facing sensor for frontal obstacle detection and avoidance.
 + Reflectivity floor sensor to detect different zones of operation.
 + A communication system based on ESP-Now.
 + OTA capability: all the robots can be program directly over-the-air.
