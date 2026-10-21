@@ -51,7 +51,7 @@ It must be noted that all the hardware for this project was developed during the
 ## Check the demo of the Range and Bearing Sensor
 The design of the range and bearing sensor required a considerable amount of time, but it was paramount to the project. It was based on the work of Jim Pugh, Alcherio Martinoli, et al [1], as well as the concepts developed by James F. Roberts et al [2].
 
-https://github.com/user-attachments/assets/1695c092-c0f4-4aa4-9918-c9a1ab5e772d
+https://github.com/user-attachments/assets/90b11efe-24dc-4490-92c2-d1492081924a
 
 It should be noted that in order to guarantee high precision (measurement repeatability) and an operational range of 4 meters, a thorough theoretical analysis was conducted regarding both the maximum allowable noise level and the gain of the amplification stages on the RX board. If you are working on a similar problem, I hope this provides some inspiration, as I found very little literature available on the subject.
 
@@ -61,6 +61,8 @@ The full scope of the project wasn't only "design a robot", the full scope of th
 For to accomplish this goal, it was mandatory to hide all the complexity involved in control systems, sensors, pose estimation, communications, etc and the real time constrains imposed by all of them. To allow the researcher to focus on the algorithm instead the platform, an API based in FreeRTOS was designed. This allows to hide all the complexity of the systems control; and at the same time, it satisfy the real time constrains. 
 
 Moreover and following the goal of fast-prototyping, Arduino IDE was selected as the IDE for the toolkit. A new core was designed to incorporate a port of FreeRTOS and to adapt some core's code. In addition, the tools for OTA (over-the-air programming) were integrated seamless in Arduino IDE though the new core. This simplify the tedious process of deploying a new program to simple click in the Arduino IDE's programming button.
+
+<img width="1853" height="1053" alt="oap_integración_arduino" src="https://github.com/user-attachments/assets/60d9ffd8-5b28-408b-9abe-aecb82660c2d" />
 
 ## More info
 You could find more info of the project at the bachelor's dissertation, available in the digital archive of the Universidad Politécnica of Madrid (UPM), linked [here](https://oa.upm.es/93830/).
