@@ -1,7 +1,7 @@
 <img width="4624" height="2084" alt="20230123_102339" src="https://github.com/user-attachments/assets/97ab5acf-4325-4eb9-b05d-8b1eeff1477f" />
 
 # ARGOS
-For my Bachelor's Thesis I developed a robotic platform called ARGOS, oriented to the research in multi-robot systems and swarm robotics. This repo contains a small showoff of the platform's capabilities. 
+For my Bachelor's Thesis, I developed a robotic platform called ARGOS, oriented toward research in multi-robot systems and swarm robotics. This repository provides a concise demonstration of the platform's architecture and operational capabilities.
 
 ## Why do you need this? Motivation of the project
 Well, at the time of the project, there weren't robotics platforms designed for multi-robot system and swarm robotics easily accessible. Nonetheless, there were a few that could have been used, but some of this platforms were too tailored to a specific set of problems or too expensive to be considerate. 
