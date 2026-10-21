@@ -68,5 +68,6 @@ You could find more info of the project at the bachelor's dissertation, availabl
 ## References
 [1] - J. Pugh, A. Martinoli, and F. Engineering, "A Fast On-Board Relative Positioning Module for
 Multi-Robot Systems," in Proc. IEEE/RSJ Int. Conf. Robot. Autom., 2009, pp. 4501–4506.
+
 [2] - J. F. Roberts, J. Pugh, and A. Martinoli, "2.5D Infrared Range and Bearing System for
 Collective Robotics," in Proc. IEEE Int. Conf. Robot. Autom., 2009, pp. 2379–2384.
